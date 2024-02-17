@@ -10,9 +10,9 @@
     <!-- link css -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="container mx-auto  font-raleway lg:px-12">
+<body class="font-raleway lg:px-12">
     <!-- nav bar start -->
-    <nav>
+    <nav class="md:container md:mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -43,12 +43,12 @@
         </div>
     </nav>
     <!-- banner section start -->
-    <main>
-        <section class="banner container mx-auto">
-            <div class="hero lg:h-[650px] bg-no-repeat" style="background-image:url(/images/banner.png)">
+    <header>
+        <section class="banner md:container md:mx-auto">
+            <div class="hero w-full lg:h-[680px] rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-30 rounded-3xl"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
                     <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn btn-primary">Get Started</button>
@@ -56,6 +56,9 @@
                 </div>
               </div>
         </section>
+    </header>
+    <main>
+       
     </main>
     <footer>
 
