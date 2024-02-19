@@ -124,7 +124,7 @@
           <div class="logo ticket-main-body lg:w-3/5">
             <div class="logo-part flex lg:justify-between">
               <div class="">
-                <div class="logo-img-text flex flex-1 lg:pl-8 lg:mt-4 lg:space-x-4">
+                <div class="logo-img-text flex flex-1 lg:pl-32 lg:mt-4 lg:space-x-4">
                   <img src="images/bus-logo.png" alt="">
                   <div>
                     <h1 class="lg:text-3xl lg:font-bold">Greenline Paribahan</h1>
@@ -132,56 +132,46 @@
                   </div>
                 </div>
               </div>
-              <div class="lg:pt-8">
+              <div class="lg:pt-8 ">
                 <button class="btn bg-[#1DD10066] text-base font-bold text-[#1DD100] h-8 w-48"><img src="images/seat-green.png" alt="">40 Seats left</button>
               </div>
             </div>
             <!-- logo part end -->
 
             <!--Ph main part start -->
-            <div class="main-part bg-[#F7F8F8] border-2 lg:h-[280px] lg:ml-8 rounded-3xl mt-6">
-              <div class="flex justify-between mt-12 px-6">
+            <div class="main-part bg-[#F7F8F8] border-2 lg:h-[280px] lg:ml-32 rounded-3xl mt-6">
+              <div class="flex justify-between mt-12 px-6 lg:border-dashed lg:border-b-2 pb-4">
                 <div><p class="">Route</p></div>
                 <div>
                   <h4 class="text-xl font-semibold">Dhaka - Sylhet</h4>
                 </div>
               </div>
-              <div>
-                <img class="mt-4 lg:mx-12" src="images/Line 1.png" alt="">
-              </div>
-              <div class="flex justify-between mt-12 px-6">
+              
+              <div class="flex justify-between mt-12 px-6 lg:border-dashed lg:border-b-2 pb-4">
                 <div><p class="">Departure Time</p></div>
                 <div>
                   <h4 class="text-xl font-semibold">9:00 PM</h4>
                 </div>
               </div>
-              <div>
-                <img class="mt-4 lg:mx-12" src="images/Line 1.png" alt="">
-              </div>
               <div class="grid grid-cols-1 lg:grid-cols-3 text-center mt-6">
                 <div>
-                  <button class="btn bg-white border-[#1DD100] text-center font-bold text-[#1DD100] text-2xl font-bold px-6">See All Offers
+                  <button class="btn bg-white border-[#1DD100] text-center font-bold text-base w-60 lg:w-48 font-normal px-6">Boarding Point-Laxmipur
                   </button>
                 </div>
                 <div>
-                  <button class="btn bg-white border-[#1DD100] text-center font-bold text-[#1DD100] text-2xl font-bold px-6">See All Offers
+                  <button class="btn bg-white border-[#1DD100] text-center font-bold text-base w-60  lg:w-48 font-normal px-6">Dropping Point - Bogura
                   </button>
                 </div>
                 <div>
-                  <button class="btn bg-white border-[#1DD100] text-center font-bold text-[#1DD100] text-2xl font-bold px-6">See All Offers
+                  <button class="btn bg-white border-[#1DD100] text-center font-normal text-base w-60 lg:w-48 font-bold px">Est. Time - 11 Hour
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="grid grid-flow-dense">
-            <div class="divider lg:mt-48">
-              <img class="lg:h-[432px]"src="images/info-devider.png" alt="">
-            </div>
-          </div>
-          <div class="ticket-side-body flex justify-center items-center mx-auto">
-            <div class="flex flex-col justify-center">
+          <!-- right side ticket-body -->
+          <div class="ticket-side-body flex justify-center items-center mx-auto lg:border-dashed lg:border-l-2 border-[#1DD100] ">
+            <div class="flex flex-col justify-center ml-8">
               <img src="images/fare.png" alt="">
               <div class="text-center">
                 <h4 class="text-4xl font-bold">550 Taka</h4>
@@ -191,13 +181,25 @@
           </div>
         </div>
         <!-- seat part start -->
-        <div class="md:container md:mx-auto flex flex-col lg:flex-row h-[700px] bg-white mt-12">
-          <div>
+        <div class="md:container md:mx-auto flex flex-col lg:flex-row h-[700px] bg-white mt-12 rounded-3xl">
+          <div class="lg:border-dashed lg:border-r-2 lg:pr-8">
+            <!-- part-1 -->
             <div class="h-20">
-              <h4 class="mt-10 ml-12">Select Your Seat</h4>
-              <img class="mt-4 lg:ml-12" src="images/Line 1.png" alt="">
+              <h4 class="mt-10 ml-12 pb-6 lg:border-dashed lg:border-b-2">Select Your Seat</h4>
             </div>
-            <div class="flex flex-col items-center lg:flex-row justify-end">
+            <!--  part-2 -->
+            <div class="flex lg:flex-row lg:justify-between pb-6 ml-8 lg:border-b-2 lg:border-dashed">
+              <div class=" w-1/2 h-14 flex flex-row justify-start gap-2">
+                <img class="" src="images/seat-gray.png" alt="">
+                <p class="flex items-center text-xl font-bold pr-2 text-gray-500">Available</p>
+              </div>
+              <div class="w-1/2 h-14 flex flex-row justify-end gap-2">
+                <img class="" src="images/seat-green-filled.png" alt="">
+                <p class="flex items-center text-xl font-bold pr-2 text-[#1DD100]">Selected</p>
+              </div>
+            </div>
+            <!-- part-3 -->
+            <div class="flex flex-col items-center lg:flex-row justify-end mt-6">
               <kbd class="kbd w-40"><img src="images/tabler-icon-steering-wheel.png" alt="">
               </kbd>
             </div>
@@ -214,14 +216,14 @@
               </div>
             </div>
             <div class="flex flex-col lg:flex-row justify-center items-center lg:gap-20 mt-4">
-              <div class="ml-4">A</div>
+              <div class="ml-4">B</div>
               <div class="lg:space-x-4">
-                <kbd class="kbd  w-40">A1</kbd>
-                <kbd class="kbd  w-40">A2</kbd>
+                <kbd class="kbd  w-40">B1</kbd>
+                <kbd class="kbd  w-40">B2</kbd>
               </div>
               <div class="lg:space-x-4">
-                <kbd class="kbd w-40">A3</kbd>
-                <kbd class="kbd w-40">A4</kbd>
+                <kbd class="kbd w-40">B3</kbd>
+                <kbd class="kbd w-40">B4</kbd>
               </div>
             </div>
           </div>
