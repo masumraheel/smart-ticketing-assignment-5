@@ -60,7 +60,7 @@
     </header>
     <main>
       <!-- best offer section start -->
-      <section class="bestoffer md:container md:mx-auto mt-20">
+      <section class="best-offer md:container md:mx-auto mt-20">
         <h2 class="text-5xl font-bold text-center">Best offers for you</h2>
       </section>
       <!--cupon section -->
@@ -120,8 +120,8 @@
         <!--paribahan part end -->
 
         <!-- ticket section start -->
-        <div class="bg-[#FFF] md:container md:mx-auto border-2 flex flex-col lg:flex-row lg:h-[428px] mt-20 rounded-2xl p-4">
-          <div class="logo ticket-main-body lg:w-3/5">
+        <div class="bg-[#FFF] md:container md:mx-auto border-2 flex flex-col lg:flex-row lg:h-[428px] mt-20 rounded-2xl ">
+          <div class=" logo ticket-main-body lg:w-4/6 lg:mr-8 p-4">
             <div class="logo-part flex flex-col lg:flex-row lg:justify-between">
               <div class="">
                 <div class="logo-img-text flex flex-1 lg:pl-32 lg:mt-4 lg:space-x-4">
@@ -169,11 +169,12 @@
               </div>
             </div>
           </div>
+
           <!-- right side ticket-body -->
-          <div class="ticket-side-body flex justify-center items-center mx-auto lg:border-dashed lg:border-l-2 border-[#1DD100]">
-            <div class="flex flex-col justify-center ml-8">
+          <div class="ticket-side-body flex justify-center items-center mx-auto lg:border-dashed lg:border-l-2 border-[#1DD100] w-1/4">
+            <div class="md:container flex flex-col items-center  justify-center md:mx-auto p-8">
               <img src="images/fare.png" alt="">
-              <div class="text-center">
+              <div class="text-center p-4">
                 <h4 class="text-4xl font-bold">550 Taka</h4>
                 <p>Per Seat</p>
               </div>
@@ -328,13 +329,14 @@
             <!-- second side  -->
           
           <div class="flex flex-col lg:w-4/12 lg:mx-auto space-y-10">
+            <!-- select seat part -->
             <div class="h-20">
               <h4 class="mt-10 border-dashed border-b-2 text-3xl font-bold pb-6 text-center lg:text-left">
                 Select Your Seat
               </h4>
             </div>
-            
-            <div class="md:container md:mx-auto w-full rounded-2xl h-[340px] bg-[#F7F8F8] p-4">
+            <!-- count ticket part -->
+            <div class="md:container md:mx-auto w-full rounded-2xl h-[330px] bg-[#F7F8F8] p-8">
               <div class=" flex justify-evenly  text-xl font-semibold border-dashed border-b-2">
                 <p>Seat<span class= "text-[white] w-2"><sub class="bg-[#1DD100] rounded-full font-semibold">4</sub></span></p>
                 <p>Class</p>
@@ -344,12 +346,26 @@
                 <p>Class</p>
               </div>
               <hr class="bg-slate-600">
+              <!-- Total Price Part -->
               <div class=" flex justify-between text-xl font-semibold">
                 <p>Total Price</p>
                 <p>BDT <span class="text-2xl font-semibold">1100</span></p>
               </div>
+              <!-- cupon part -->
+              <div class="cupon-container flex justify-around mt-4">
+                <input class="input-bordered border-r-0  w-full  rounded-l-none" type="text" name="cuppon" id="">
+                <button class="btn bg-[#1DD100] text-white  pr-6 rounded-l-none">Apply</button>
+              </div>
+
+              <!-- Grand Total Part -->
+              <div class=" flex justify-between text-xl font-semibold mt-4">
+                <p>Grand Total</p>
+                <p>BDT <span class="text-2xl font-semibold">1100</span></p>
+              </div>
             </div>
-            
+
+
+            <!-- passenger info part -->
             <div class="">
               <div class="pb-2 text-xl font-bold">Passenger Name:
               <label class="input input-bordered flex items-center gap-2  w-full">
@@ -410,3 +426,5 @@
     <script src=""></script>
 </body>
 </html>
+
+
