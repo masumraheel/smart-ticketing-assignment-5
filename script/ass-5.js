@@ -6,6 +6,14 @@ for (const btn of allBtn){
 
         btn.classList.add("bg-green-400");
 
+        const seatCount=getConvertedValue("ticket-count");
+        document.getElementById("ticket-count").innerText=seatCount+1;
+
+        const result=getConvertedValue('total-seat');
+        document.getElementById('total-seat').innerText=result-1;
+
+
+
         const selectedSeat=document.getElementById("selected-seat");
 
         const div=document.createElement("div");
@@ -69,7 +77,7 @@ function getConvertedValue(id){
     const convertTotalSeat=parseInt(totalSeat);
     return convertTotalSeat;
 }
-const result=getConvertedValue('total-seat');
-console.log(result);
+// const result=getConvertedValue('total-seat');
+// // console.log(result);
 
 
