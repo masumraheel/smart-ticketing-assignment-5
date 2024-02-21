@@ -63,10 +63,10 @@
       <section class="best-offer md:container md:mx-auto mt-20">
         <h2 class="text-5xl font-bold text-center">Best offers for you</h2>
       </section>
-      <!--cupon section -->
+      <!--coupon section -->
       <section class="cuponcode md:container md:mx-auto mt-12">
         <div class="flex flex-col lg:flex-row w-full lg:space-x-8">
-          <!-- cupon1 -->
+          <!-- coupon1 -->
           <div class="card bg-[#FFBF0F] shadow-xl flex flex-row lg:w-full">
               <div class="card-body w-3/4 flex justify-center items-center">
                 <h2 class="card-title text-5xl font-bold">15% OFF</h2>
@@ -86,7 +86,7 @@
                 </div>
               </div>
             </div>
-            <!-- cupon2 -->
+            <!-- coupon2 -->
             <div class="card bg-[#F78C9C] shadow-xl flex flex-row  lg:w-full">
               <div class="card-body w-3/4 flex justify-center items-center">
                 <h2 class="card-title text-5xl font-bold">20% OFF</h2>
@@ -133,7 +133,7 @@
                 </div>
               </div>
               <div class="lg:pt-8 ">
-                <button class="btn bg-[#1DD10066] text-base font-bold text-[#1DD100] h-8 w-48"><img src="images/seat-green.png" alt="">40 Seats left</button>
+                <button id="total-seat" class="btn bg-[#1DD10066] text-base font-bold text-[#1DD100] h-8 w-48"><img src="images/seat-green.png" alt="">40 Seats left</button>
               </div>
             </div>
             <!-- logo part end -->
@@ -184,7 +184,7 @@
         <!-- seat part start -->
         <div class="md:container md:mx-auto flex flex-col lg:flex-row lg:h-3/5 bg-white mt-12 rounded-3xl p-4">
           <div class="lg:border-dashed lg:border-r-2 lg:pr-8">
-            <!-- part-1 -->
+            <!--select part-1 -->
             <div class="h-20">
               <h4 class="mt-10 lg:ml-12 pb-6 border-dashed border-b-2 text-3xl text-center font-bold lg:text-left">Select Your Seat</h4>
             </div>
@@ -201,127 +201,129 @@
             </div>
             <!-- part-3 -->
             <div class="flex flex-col items-center lg:flex-row justify-end mt-6">
-              <button class="btn w-40"><img src="images/tabler-icon-steering-wheel.png" alt="">
+              <button class="btn w-40 border-2"><img src="images/tabler-icon-steering-wheel.png" alt="">
               </button>
             </div>
             <!-- Seat counter -->
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 mt-4 space-y-2">
               <div class="ml-4">A</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">A1</button>
-                <button class="btn  w-40">A2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">A1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">A2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">A3</button>
-                <button class="btn  w-40">A4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">A3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">A4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">B</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">B1</button>
-                <button class="btn  w-40">B2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">B1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">B2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">B3</button>
-                <button class="btn  w-40">B4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">B3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">B4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">C</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">C1</button>
-                <button class="btn  w-40">C2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">C1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">C2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">C3</button>
-                <button class="btn  w-40">C4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">C3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">C4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">D</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">D1</button>
-                <button class="btn  w-40">D2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">D1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">D2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">D3</button>
-                <button class="btn  w-40">D4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">D3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">D4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">E</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">E1</button>
-                <button class="btn  w-40">E2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">E1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">E2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">E3</button>
-                <button class="btn  w-40">E4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">E3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">E4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">F</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">F1</button>
-                <button class="btn  w-40">F2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">F1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">F2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">F3</button>
-                <button class="btn  w-40">F4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">F3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">F4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">G</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">G1</button>
-                <button class="btn  w-40">G2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">G1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">G2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">G3</button>
-                <button class="btn  w-40">G4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">G3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">G4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">H</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">H1</button>
-                <button class="btn  w-40">H2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">H1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">H2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">H3</button>
-                <button class="btn  w-40">H4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">H3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">H4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">I</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">I1</button>
-                <button class="btn  w-40">I2</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">I1</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">I2</button>
               </div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">I3</button>
-                <button class="btn  w-40">I4</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">I3</button>
+                <button class="add-btn bg-slate-300  h-12 w-40">I4</button>
               </div>
             </div>
 
             <div class="seat-counter flex flex-col lg:flex-row justify-center items-center lg:gap-20 space-y-2 mt-4">
               <div class="ml-4">J</div>
               <div class="lg:space-x-4">
-                <button class="btn  w-40">J1</button>
-                <button class="btn  w-40">J2</button>
-              </div>
+                <button class="add-btn bg-slate-300 
+                h-12 w-40">J1</button>
+                <button class="add-btn bg-slate-300 h-12 w-40">J2</button>
+              </div>  
               <div class="lg:space-x-4">
-                <button class="btn  w-40">J3</button>
-                <button class="btn  w-40">J4</button>
+                <button class="add-btn bg-slate-300 h-12 w-40">J3</button>
+                <button class="add-btn bg-slate-300 
+                h-12 w-40">J4</button>
               </div>
             </div>
           </div>
@@ -342,14 +344,16 @@
                 <p>Class</p>
                 <p>Price</p>
               </div>
-              <div class="selected-value">
-                
+
+              <div id="selected-seat">
+              
               </div>
+
               <hr class="bg-slate-600">
               <!-- Total Price Part -->
               <div class=" flex justify-between text-xl font-semibold">
                 <p>Total Price</p>
-                <p>BDT <span class="text-2xl font-semibold">1100</span></p>
+                <p>BDT <span class="text-2xl font-semibold">0</span></p>
               </div>
               <!-- cupon part -->
               <div class="cupon-container flex justify-around mt-4">
@@ -360,7 +364,7 @@
               <!-- Grand Total Part -->
               <div class=" flex justify-between text-xl font-semibold mt-4">
                 <p>Grand Total</p>
-                <p>BDT <span class="text-2xl font-semibold">1100</span></p>
+                <p>BDT <span class="text-2xl font-semibold">0</span></p>
               </div>
             </div>
 
@@ -423,7 +427,7 @@
           </div>
         </div>
       </footer>
-    <script src=""></script>
+    <script src="script/ass-5.js"></script>
 </body>
 </html>
 

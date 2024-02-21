@@ -3,3 +3,8 @@
 .font-raleway{
     font-family: "Raleway", sans-serif;
 }
+
+.count-seat{
+    display:flex;
+    justify-content: space-evenly;
+}
