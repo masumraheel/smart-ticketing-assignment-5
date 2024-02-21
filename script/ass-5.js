@@ -6,6 +6,13 @@ for (const btn of allBtn){
 
         btn.classList.add("bg-green-400");
 
+        const seatBuy=getConvertedValue("ticket-count");
+        if(seatBuy+1>4){
+            alert("Your limit is over");
+            return;
+        }
+
+
         const seatCount=getConvertedValue("ticket-count");
         document.getElementById("ticket-count").innerText=seatCount+1;
 
