@@ -3,7 +3,8 @@ const allBtn= document.getElementsByClassName("add-btn");
 for (const btn of allBtn){
     btn.addEventListener("click", function (event){
         const seat=event.target.innerText;
-        // console.log(seat)
+
+        btn.classList.add("bg-green-400");
 
         const selectedSeat=document.getElementById("selected-seat");
 
@@ -22,11 +23,40 @@ for (const btn of allBtn){
         div.appendChild(p3);
 
         selectedSeat.appendChild(div);
+
+        updateTotalPrice(p3.innerText);
+        updateGrandTotal()
     })
 }
 
+// price section start
+function updateGrandTotal(discount){
+    const totalPrice= getConvertedValue("total-price");
+    if(discount==undefined){
+        document.getElementById("grand-total").innerText=totalPrice;
+    }
+    else{
+       const couponCode= document.getElementById("coupon-code").value;
+       if(couponCode=="NEW15"){
+        const discountedN= totalPrice * .15;
+        document.getElementById("grand-total").innerText=totalPrice-discountedN;
+       }
+       else if(couponCode=="Couple 20"){
+        const discountedC= totalPrice *.2;
+        document.getElementById("grand-total").innerText=totalPrice-discountedC;
+       }
+       else{
+        alert('This coupon Code is not Valid')
+       }
+    }
 
+}
 
+function updateTotalPrice(value){
+    const totalPrice= getConvertedValue("total-price");
+    const sum= totalPrice+parseInt(value);
+    document.getElementById("total-price").innerText=sum;
+}
 
 
 

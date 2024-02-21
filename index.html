@@ -351,20 +351,18 @@
 
               <hr class="bg-slate-600">
               <!-- Total Price Part -->
-              <div class=" flex justify-between text-xl font-semibold">
-                <p>Total Price</p>
-                <p>BDT <span class="text-2xl font-semibold">0</span></p>
+              <div  class="flex justify-center text-xl font-semibold">
+                <p>Total Price BDT<span id="total-price" class="text-xl font-semibold ml-20">0</span></p>
               </div>
               <!-- cupon part -->
               <div class="cupon-container flex justify-around mt-4">
-                <input class="input-bordered border-r-0  w-full  rounded-l-none" type="text" name="cuppon" id="">
-                <button class="btn bg-[#1DD100] text-white  pr-6 rounded-l-none">Apply</button>
+                <input class="input-bordered border-r-0  w-full  rounded-l-2xl" type="text" name="coupon" id="coupon-code">
+                <button onclick="updateGrandTotal('apply-btn')" id="apply-button" class="apply-btn h-12 rounded-r-2xl bg-[#1DD100] text-white  pr-6 rounded-l-none">Apply</button>
               </div>
 
               <!-- Grand Total Part -->
-              <div class=" flex justify-between text-xl font-semibold mt-4">
-                <p>Grand Total</p>
-                <p>BDT <span class="text-2xl font-semibold">0</span></p>
+              <div  class=" flex justify-center text-xl font-semibold">
+                <p >Grand Total BDT <span id="grand-total" class="text-xl font-semibold ml-20">0</span></p>
               </div>
             </div>
 
