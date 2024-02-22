@@ -4,9 +4,7 @@ for (const btn of allBtn){
     btn.addEventListener("click", function (event){
         const seat=event.target.innerText;
 
-        // btn.classList.add("bg-green-400");
         btn.classList.add("bg-green-400");
-
 
         const seatBuy=getConvertedValue("ticket-count");
         if(seatBuy+1>4){
