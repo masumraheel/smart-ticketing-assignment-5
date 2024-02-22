@@ -4,7 +4,9 @@ for (const btn of allBtn){
     btn.addEventListener("click", function (event){
         const seat=event.target.innerText;
 
+        // btn.classList.add("bg-green-400");
         btn.classList.add("bg-green-400");
+
 
         const seatBuy=getConvertedValue("ticket-count");
         if(seatBuy+1>4){
@@ -88,3 +90,20 @@ function getConvertedValue(id){
 // // console.log(result);
 
 
+ 
+// add - remove 
+function add (e){
+    const homesc=document.getElementById(e);
+    homesc.classList.add('hidden')
+}
+
+function remove (e){
+    const popup=document.getElementById(e);
+    popup.classList.remove('hidden')
+}
+
+document.getElementById("btn-next").addEventListener('click',function(){
+    add('home');
+    remove('popup');
+
+})
