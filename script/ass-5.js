@@ -105,5 +105,4 @@ function remove (e){
 document.getElementById("btn-next").addEventListener('click',function(){
     add('home');
     remove('popup');
-
 })
